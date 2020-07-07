@@ -1,0 +1,309 @@
+.profile-banner {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    rgba(25, 119, 207, 0.2),
+    rgba(45, 7, 95, 0.2)
+  );
+  color: white;
+}
+
+.profile-pic,
+.default-profile-pic {
+  margin-top: 12vh;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: 300%;
+  z-index: 5;
+}
+
+.default-profile-pic {
+  background-image: url(../../images/default-pfp-2.png);
+  background-size: 315%;
+  background-color: linear-gradient(
+    to bottom right,
+    rgba(25, 119, 207, 0.2),
+    rgba(45, 7, 95, 0.2)
+  );
+}
+
+.user-info {
+  background-color: rgb(58, 65, 65);
+  color: rgba(255, 255, 255, 0.883);
+  width: 100%;
+  max-width: 600px;
+  min-height: 40vh;
+  margin: 2px;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.user-experience, .user-link{
+  margin-bottom: 15px;
+}
+
+.profile-border {
+  width: calc(80vw + 4px);
+  max-width: 604px;
+  min-height: calc(40vh + 4px);
+  background: linear-gradient(to bottom right, #2291ff, #6b1180);
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.not-logged {
+  font-size: 28px;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.user-name {
+  font-size: 28px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.info-title {
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.698);
+}
+
+.info {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.user-port {
+  color: rgba(255, 255, 255, 0.808);
+  width: 90%;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.user-port:hover{
+  cursor: pointer;
+}
+
+.not-logged {
+  margin-top: 15%;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.posts-container{
+  margin-bottom: 60px;
+}
+
+.posts-title {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.profile-button {
+  border-style: none;
+  padding: 3px;
+}
+
+.profile-active, .profile-inactive{
+  border-radius: 100px;
+  margin-right: 5px;
+  padding: 5px 15px;
+  background-color: #252B2D;
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 12px;
+}
+
+.profile-active {
+  border: 1.5px solid #2291ff;
+}
+
+.profile-input{
+  border-radius: 100px;
+  border-style: none;
+  background-color: #252B2D;
+  padding: 4px 13px;
+  color: rgba(255, 255, 255, 0.815);
+  font-weight: 200;
+}
+
+.profile-location {
+  color: rgba(255, 255, 255, 0.815);
+  border: none;
+  background-color: #252B2D;
+  font-weight: 200;
+}
+
+.profile-location::placeholder{
+  color: rgba(255, 255, 255, 0.294);
+}
+
+.profile-location-container {
+  position: relative;
+}
+
+.profile-edit-button-container{
+  width: 100%;
+}
+
+.profile-edit-info{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.profile-log-out,
+.update-info-btn,
+.profile-log-in,
+.delete-post,
+.cancel-profile-edit,
+.edit-info-btn,
+.new-user-update-info-btn {
+  border-style: none;
+  border-radius: 15px;
+  width: 45%;
+  height: 25px;
+  background: linear-gradient(to left, #3275e3, #6b1180);
+  color: white;
+  font-weight: 200;
+  box-shadow: rgba(0, 0, 0, 0.205) 0 0 15px;
+}
+
+.new-user-update-info-btn{
+  width: 100%;
+}
+
+.new-user-profile-edit-info{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.edit-info-btn{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cancel-profile-edit{
+  width: 30%;
+  margin: 0;
+}
+
+.update-info-btn{
+  width: 65%;
+  margin: 0;
+}
+
+.profile-log-out {
+  width: 100%;
+  margin: 0;
+}
+
+.log-out-btn-true{
+  width: 100%;
+}
+
+.log-out-btn {
+  width: 100%;
+}
+
+.profile-log-in {
+  border-radius: 25px;
+  width: 225px;
+  height: 40px;
+  margin: 15px auto;
+}
+.login-a-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button-container {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.profile-post-username {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+
+.profile-post-location {
+  font-weight: 200;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.698);
+}
+
+.delete-post {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -100%);
+  margin-right: 10px;
+  min-width: 75px;
+  width: 10vw;
+  max-width: 120px;
+  letter-spacing: 0.1em;
+}
+
+.profile-no-posts{
+  margin: 20px;
+}
+
+@media (max-width: 415px) {
+  .delete-post {
+    min-width: 60px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .default-profile-pic, .profile-pic{
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 500px) {
+  .profile-edit-button-container{
+    width: 45%;
+  }
+
+  .profile-edit-info{
+    width: 100%;
+  }
+
+  .log-out-btn-true{
+    width: 45%;
+  }
+
+  .log-out-btn{
+    width: 45%;
+  }
+
+  .new-user-profile-edit-info{
+    width: 45%;
+  }
+}

@@ -1,0 +1,138 @@
+.nav, .nav-true{
+    width: 100vw;
+    height: 100vh;
+    background-color: #202124;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    align-items: center;
+    transition: ease-in-out .3s;
+    z-index: 1000;
+}
+
+.nav-true{
+    transform: translate(0);
+    box-shadow: rgba(0, 0, 0, 0.13) 5px 0px 25px;
+}
+
+.nav{
+    transform: translate(-100%);
+}
+
+.default-nav-pfp, .user-nav-pfp{
+    margin-top: -11vh;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.default-nav-pfp{
+    background-image: url(../../images/default-pfp-2.png);
+    background-size: 300%;
+}
+
+.user-nav-pfp{
+    background-size: cover;
+}
+
+.nav-links, .nav-links-true{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 130px;
+}
+
+.link{
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    transition: .1s linear;
+    font-weight: 300;
+}
+
+.link:hover{
+    font-weight: 500;
+}
+
+@media (min-width: 425px) {
+    .nav, .nav-true{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 528px) {
+    .nav, .nav-true{
+        width: 70vw;
+    }
+}
+
+@media (min-width: 620px) {
+    .nav, .nav-true{
+        width: 50vw;
+    }
+}
+
+@media (min-width: 790px) {
+    .nav, .nav-true{
+        width: 40vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .nav, .nav-true{
+        width: 35vw;
+    }
+}
+
+@media (min-width: 1025px) {
+    .nav, .nav-true{
+        width: 30vw;
+    }
+}
+
+@media (min-width: 1250px) {
+    .nav, .nav-true{
+        width: 20vw;
+    }
+}
+
+
+
+@media (max-height: 600px) {
+    .link{
+        font-size: 18px;
+    }
+
+    .user-nav-pfp, .default-nav-pfp{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-height: 665px) {
+    .link{
+        font-size: 20px;
+    }
+
+    .user-nav-pfp, .default-nav-pfp{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-height: 500px) {
+    .link{
+        font-size: 16px;
+    }
+
+    .user-nav-pfp, .default-nav-pfp{
+        width: 110px;
+        height: 110px;
+    }
+}
