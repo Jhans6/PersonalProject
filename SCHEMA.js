@@ -8,7 +8,7 @@
 // -- (user_id SERIAL PRIMARY KEY, auth_id TEXT, email VARCHAR(100), first_name VARCHAR(100), last_name VARCHAR(100), user_type INTEGER, birthdate VARCHAR(100), bio VARCHAR(500), experience VARCHAR(50), profile_picture TEXT);
 
 // -- INSERT INTO users (email,first_name,last_name,user_type,birthdate,experience)
-// -- VALUES ('Test','Aaron','Blackshear',1,06-29-1999,'Senior Dev');
+// -- VALUES ('Test','Joshua','Hansen',1,06-29-1999,'Senior Dev');
 
 // -- SELECT * FROM users;
 // -- CREATE TABLE posts (post_id SERIAL PRIMARY KEY, user_id INTEGER REFERENCES users(user_id), post_body VARCHAR(300), post_date VARCHAR(100));
